@@ -1,27 +1,22 @@
 ﻿using System;
 
-/// <summary>
-/// Clase principal que simula la interacción del usuario con el sistema.
-/// </summary>
-public class Program
+class Program
 {
-    public static void Main(string[] args)
+    static void Main(string[] args)
     {
-        // Crear una instancia de la cola con 30 asientos
-        ColaEspera colaEspera = new ColaEspera(30);
-        string? opcion;
+        Atraccion atraccion = new Atraccion(30); // Capacidad de 30 asientos
+        Reporteria reporteria = new Reporteria();
 
-        Console.WriteLine("====== PARQUE DE DIVERSIONES: SISTEMA DE ASIGNACIÓN DE ASIENTOS ======\n");
-
-        do
+        while (true)
         {
-            Console.WriteLine("\nSeleccione una opción:");
-            Console.WriteLine("1. Añadir persona a la cola");
-            Console.WriteLine("2. Asignar asientos");
-            Console.WriteLine("3. Mostrar asientos disponibles");
-            Console.WriteLine("4. Salir");
-            Console.Write("Opción: ");
-            opcion = Console.ReadLine();
+            Console.WriteLine("\n🎡 Menú Principal");
+            Console.WriteLine("1. Agregar persona a la cola");
+            Console.WriteLine("2. Asignar asiento a la siguiente persona");
+            Console.WriteLine("3. Ver reporte de cola");
+            Console.WriteLine("4. Ver estado de asientos");
+            Console.WriteLine("5. Salir");
+            Console.Write("Seleccione una opción: ");
+            string? opcion = Console.ReadLine();
 
             switch (opcion)
             {
@@ -31,34 +26,42 @@ public class Program
 
                     if (string.IsNullOrWhiteSpace(nombre))
                     {
-                        Console.WriteLine("[!] El nombre no puede estar vacío. Intente de nuevo.");
+                        Console.WriteLine("❌ El nombre no puede estar vacío.");
                     }
                     else
                     {
-                        colaEspera.AgregarPersona(new Persona(nombre));
-                        Console.WriteLine($"[+] {nombre} ha sido añadido a la cola.");
+                        if (atraccion.AgregarPersona(nombre))
+                            Console.WriteLine($"{nombre} ha sido agregado a la cola.");
+                        else
+                            Console.WriteLine("❌ No hay más asientos disponibles.");
                     }
                     break;
 
                 case "2":
-                    colaEspera.AsignarAsientos();
+                    string? siguiente = atraccion.AsignarAsiento();
+
+                    if (!string.IsNullOrWhiteSpace(siguiente))
+                        Console.WriteLine($"🎟️ {siguiente} ha subido a la atracción.");
+                    else
+                        Console.WriteLine("La cola está vacía o no hay más asientos.");
                     break;
 
                 case "3":
-                    Console.WriteLine($"\n[ℹ] Asientos disponibles: {colaEspera.AsientosDisponibles()}");
+                    reporteria.MostrarColaActual(atraccion.ObtenerCola());
                     break;
 
                 case "4":
-                    Console.WriteLine("\n[✔] Gracias por usar el sistema.");
+                    reporteria.MostrarEstado(atraccion);
                     break;
+
+                case "5":
+                    Console.WriteLine("Gracias por usar el sistema.");
+                    return;
 
                 default:
-                    Console.WriteLine("\n[!] Opción no válida.");
+                    Console.WriteLine("Opción inválida.");
                     break;
             }
-
-        } while (opcion != "4");
+        }
     }
 }
-
-

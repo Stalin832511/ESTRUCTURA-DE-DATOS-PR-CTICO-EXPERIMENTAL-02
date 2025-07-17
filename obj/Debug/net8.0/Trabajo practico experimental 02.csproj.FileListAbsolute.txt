@@ -12,3 +12,4 @@ C:\Users\Familia\Trabajo practico experimental 02\obj\Debug\net8.0\refint\Trabaj
 C:\Users\Familia\Trabajo practico experimental 02\obj\Debug\net8.0\Trabajo practico experimental 02.pdb
 C:\Users\Familia\Trabajo practico experimental 02\obj\Debug\net8.0\Trabajo practico experimental 02.genruntimeconfig.cache
 C:\Users\Familia\Trabajo practico experimental 02\obj\Debug\net8.0\ref\Trabajo practico experimental 02.dll
+C:\Users\Familia\Trabajo practico experimental 02\obj\Debug\net8.0\Trabajo practico experimental 02.sourcelink.json
