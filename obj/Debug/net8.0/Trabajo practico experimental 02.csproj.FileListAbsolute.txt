@@ -1,0 +1,14 @@
+C:\Users\Familia\Trabajo practico experimental 02\bin\Debug\net8.0\Trabajo practico experimental 02.exe
+C:\Users\Familia\Trabajo practico experimental 02\bin\Debug\net8.0\Trabajo practico experimental 02.deps.json
+C:\Users\Familia\Trabajo practico experimental 02\bin\Debug\net8.0\Trabajo practico experimental 02.runtimeconfig.json
+C:\Users\Familia\Trabajo practico experimental 02\bin\Debug\net8.0\Trabajo practico experimental 02.dll
+C:\Users\Familia\Trabajo practico experimental 02\bin\Debug\net8.0\Trabajo practico experimental 02.pdb
+C:\Users\Familia\Trabajo practico experimental 02\obj\Debug\net8.0\Trabajo practico experimental 02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Familia\Trabajo practico experimental 02\obj\Debug\net8.0\Trabajo practico experimental 02.AssemblyInfoInputs.cache
+C:\Users\Familia\Trabajo practico experimental 02\obj\Debug\net8.0\Trabajo practico experimental 02.AssemblyInfo.cs
+C:\Users\Familia\Trabajo practico experimental 02\obj\Debug\net8.0\Trabajo practico experimental 02.csproj.CoreCompileInputs.cache
+C:\Users\Familia\Trabajo practico experimental 02\obj\Debug\net8.0\Trabajo practico experimental 02.dll
+C:\Users\Familia\Trabajo practico experimental 02\obj\Debug\net8.0\refint\Trabajo practico experimental 02.dll
+C:\Users\Familia\Trabajo practico experimental 02\obj\Debug\net8.0\Trabajo practico experimental 02.pdb
+C:\Users\Familia\Trabajo practico experimental 02\obj\Debug\net8.0\Trabajo practico experimental 02.genruntimeconfig.cache
+C:\Users\Familia\Trabajo practico experimental 02\obj\Debug\net8.0\ref\Trabajo practico experimental 02.dll
